@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+	<title>Flood </title>
+	<style type="text/css">
+		div.maintop {
+  			position: relative;
+  			height: 70px;
+  			background-color: #FFFFFF;
+  			margin-right: 70px;
+  			margin-left: 70px;
+  			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+		} 
+
+		div.logomain {
+  			position: absolute;
+  			top: 0px;
+  			margin-left: 0px;
+  			width: 120px;
+  			height: 120px;
+  			background-color: none;
+  			
+		}
+		
+
+		body {
+			background-color: #D6D3D3;
+		}
+
+		img.logo {
+			width: 95px;
+			height: 85px;
+			object-fit: cover;
+		}
+
+		div.miantopic {
+			font-size: 70px;
+			margin-left: 120px;
+			margin-top: 0px;
+			margin-bottom: 10px;
+			font-family: Stencil;
+			text-shadow: 3px 3px #D6D3D3;
+		}
+		div.mainsecond {
+			width: 100%;
+			height: 30px;
+			background-color: #302E2E;
+			font-style: italic;
+			color: white;
+			font-size: 20px;
+		}
+		div.slidshow {
+			position: relative;
+			height: 350px;
+			margin-left: 70px;
+			margin-right: 70px;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			background-color: white;
+
+		}
+		div.subslidshow {
+			position: absolute;
+			bottom: 10px;
+			right: 0px;
+			width: 35%;
+			height: 50px;
+			font-size: 20px;
+			color: white;
+			font-style: italic;
+		}
+		img.mimage {
+	
+			object-fit: cover;
+			
+		}
+		div.home {
+			height: 1170px;
+			margin-left: 70px;
+			margin-right: 70px;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			background-color: #fffae8;
+		}
+		div.bottom {
+      position: relative;
+			height: 300px;
+			margin-left: 70px;
+			margin-right: 70px;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			background-color: #D6D3D3;
+		}
+		div.legend {
+			height: 30px;
+			margin-left: 70px;
+			margin-right: 70px;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			background-color: #2A2929;
+		}
+		div.vl {
+			border-right: 4px dotted #D6D3D3;
+			height: 1170px;
+			margin-left: 70px;
+			margin-right: 500px;
+  			position: relative;
+  			top: 0;
+		}
+		div.t1{
+			position: relative;
+			height: 120px;
+			width: 85%;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			left: -10%;
+			top: 120px;
+      transition: transform .2s;
+		}
+		div.t2{
+			position: relative;
+			height: 120px;
+			width: 85%;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			left: -10%;
+			top: 140px;
+      transition: transform .2s;
+		}
+		div.t3{
+			position: relative;
+			height: 120px;
+			width: 85%;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			left: -10%;
+			top: 160px;
+      transition: transform .2s;
+		}
+		div.t4{
+			position: relative;
+			height: 120px;
+			width: 85%;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			left: -10%;
+			top: 180px;
+      transition: transform .2s;
+		}
+		div.t5{
+			position: relative;
+			height: 120px;
+			width: 85%;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			left: -10%;
+			top: 200px;
+      transition: transform .2s;
+		}
+		div.t6{
+			position: relative;
+			height: 120px;
+			width: 85%;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			left: -10%;
+			top: 220px;
+      transition: transform .2s;
+		}
+		div.t7{
+			position: relative;
+			height: 120px;
+			width: 85%;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			left: -10%;
+			top: 240px;
+      transition: transform .2s;
+		}
+    .t1:hover, .t2:hover, .t3:hover, .t4:hover, .t5:hover, .t6:hover, .t7:hover {
+      transform: scale(0.9);
+      cursor: pointer;
+      background-color: #f7e7ad;
+      
+    }
+    .t1, .t2, .t3, .t4, .t5, .t6, .t7 {
+      font-size: 25px;
+      padding-top: 5px;
+      padding-left: 5px;
+      padding-right: 10px;
+      font-family: Trebuchet MS;
+      color: #2F3BC9;
+      margin: auto;
+      text-align: right;
+
+    }
+    a, .t1, .t2, .t3, .t4, .t5, .t6, .t7, abbr{
+        text-decoration: none;
+
+      }
+/*--------------------------------------------------------------------------------------------------*/
+    .timg{
+      position: absolute;
+      width: 30%;
+      height: 80%;
+      left: 10px;
+      top: 10px;
+      box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+      object-fit: cover;
+    }
+/*--------------------------------------------------------------------------------------------------*/
+		div.iname {
+			position: absolute;
+			height: 25px;
+			width: 480px;
+			left: 102%;
+			top: 85px;
+			font-size: 25px;
+			font-style: bold;
+			font-family: Trebuchet MS;
+		}
+		iframe {
+			position: absolute;
+			height: 300px;
+			width: 480px;
+			left: 102%;
+			top: 120px;
+		}
+		div.mimagesname {
+			position: absolute;
+			height: 25px;
+			width: 480px;
+			left: 102%;
+			top: 445px;
+			font-size: 25px;
+			font-style: bold;
+			font-family: Trebuchet MS;
+		}
+/*----------------------------------------- Gallery---------------------------------*/ 
+		div.mimages {
+     	 	position: relative;
+     	 	height: 300px;
+      		width: 480px;
+      		left: 102%;
+      		top: -400px;
+      		box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+    	}
+    	div.mimages1 {
+      		position: absolute;
+      		height: 130px;
+      		width: 146.6px;
+      		left: 10px;
+      		top: 10px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+     		transition: transform .2s;
+    	}
+    	div.mimages2 {
+      		position: absolute;
+      		height: 130px;
+      		width: 146.6px;
+      		left: 166.6px;
+      		top: 10px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+    	}
+    	div.mimages3 {
+     		position: absolute;
+      		height: 130px;
+      		width: 146.6px;
+      		left: 323.2px;
+      		top: 10px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+    	}
+    	div.mimages4 {
+      		position: absolute;
+      		height: 130px;
+      		width: 146.6px;
+      		left: 10px;
+      		top: 150px;
+     		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+    	}
+    	div.mimages5 {
+      		position: absolute;
+      		height: 130px;
+      		width: 146.6px;
+      		left: 166.6px;
+      		top: 150px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+    	}
+    	div.mimages6 {
+      		position: absolute;
+      		height: 130px;
+      		width: 146.6px;
+      		left: 323.2px;
+      		top: 150px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+    	}
+    	.mimages1:hover , .mimages2:hover , .mimages3:hover , .mimages4:hover , .mimages5:hover , .mimages6:hover{
+      		transform: scale(0.8);
+      		opacity: 0.7;
+      		cursor: pointer;
+    	}
+    	.mim1 , .mim2 , .mim3 , .mim4 , .mim5 , .mim6 {
+      		width: 146.6px;
+      		height: 130px;
+      		object-fit: cover;
+    	}
+  		.modal1, .modal2, .modal3, .modal4, .modal5, .modal6 {
+    		display: none; 
+   		 	position: fixed; 
+    		z-index: 1; 
+    		padding-top: 100px; 
+    		left: 0;
+    		top: 0;
+    		width: 100%; 
+    		height: 100%; 
+    		overflow: auto; 
+    		background-color: rgb(0,0,0); 
+    		background-color: rgba(0,0,0,0.9); 
+  		}
+  		.modal-content1, .modal-content2, .modal-content3, .modal-content4, .modal-content5, .modal-content6 {
+   			margin: auto;
+   			display: block;
+   			width: 80%;
+   			max-width: 700px;
+  		}
+		#caption1, #caption2, #caption3, #caption4, #caption5, #caption6 {
+   			margin: auto;
+  			display: block;
+   			width: 80%;
+   			max-width: 700px;
+   			text-align:
+   			center;color: #ccc;
+   			padding: 10px 0;
+   			height: 150px;
+  		}
+		/*--- Add Animation-- (I can't understand this code...)*/
+  		.modal-content1, #caption1, .modal-content2, #caption2, .modal-content3, #caption3, .modal-content4, #caption4, .modal-content5, #caption5, .modal-content6, #caption6{  
+   			-webkit-animation-name: zoom;
+  			-webkit-animation-duration: 0.6s;
+  		 	animation-name: zoom;
+   			animation-duration: 0.6s;
+  		}
+  		@-webkit-keyframes zoom {
+    		from {-webkit-transform:scale(0)} 
+    		to {-webkit-transform:scale(1)}
+  		}
+  		@keyframes zoom {
+    		from {transform:scale(0)} 
+    		to {transform:scale(1)}
+  		}
+  		/*------------------------------------------------*/
+  		.close1, .close2, .close3, .close4, .close5, .close6 {
+    		position: absolute;
+    		top: 15px;
+    		right: 35px;
+    		color: #f1f1f1;
+    		font-size: 40px;
+    		font-weight: bold;
+    		transition: 0.3s;
+ 		}
+  		.close1:hover, .close1:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus, .close4:hover, .close4:focus, .close5:hover, .close5:focus, .close6:hover, .close6:focus {
+    		color: #bbb;
+    		text-decoration: none;
+    		cursor: pointer;
+  		}
+/*------------------------------------------------------------------------------------------*/
+		div.mnewsname {
+			position: absolute;
+			height: 25px;
+			width: 480px;
+			left: 102%;
+			top: 805px;
+			font-size: 25px;
+			font-style: bold;
+			font-family: Trebuchet MS;
+		}
+		div.mnews {
+			position: absolute;
+			height: 300px;
+			width: 480px;
+			left: 102%;
+			top: 840px;
+			box-shadow:  0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 20px 0 rgba(0, 0, 0, 0);
+			overflow: auto;
+		}
+/*---------------------------------------------NEWS Feild---------------------------------------------------------*/
+		div.mnews1 {
+      		position: absolute;
+      		height: 90px;
+      		width: 435px;
+      		left: 15px;
+      		top: 10px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+   		}
+    	div.mnews2 {
+      		position: absolute;
+      		height: 90px;
+      		width: 435px;
+      		left: 15px;
+      		top: 110px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+    	}
+    	div.mnews3 {
+      		position: absolute;
+      		height: 90px;
+      		width: 435px;
+      		left: 15px;
+      		top: 210px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+    	}
+    	div.mnews4 {
+      		position: absolute;
+      		height: 90px;
+      		width: 435px;
+      		left: 15px;
+      		top: 310px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+    	}
+    	div.mnews5 {
+      		position: absolute;
+      		height: 90px;
+      		width: 435px;
+      		left: 15px;
+      		top: 410px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+    	}
+    	div.mnews6 {
+      		position: absolute;
+      		height: 90px;
+      		width: 435px;
+      		left: 15px;
+      		top: 510px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+    	}
+    	div.mnews7 {
+      		position: absolute;
+      		height: 90px;
+      		width: 435px;
+      		left: 15px;
+      		top: 610px;
+      		bottom: 10px;
+      		box-shadow:  0 0px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 2px 0 rgba(0, 0, 0, 0);
+      		transition: transform .2s;
+    	}
+    	.mnews1:hover , .mnews2:hover , .mnews3:hover , .mnews4:hover , .mnews5:hover , .mnews6:hover, .mnews7:hover {
+      		transform: scale(0.9);
+      		cursor: pointer;
+      		background-color: #2F3BC9;
+      		color: white;
+    	}
+    	.mnews1, .mnews2, .mnews3, .mnews4, .mnews5, .mnews6, .mnews7 {
+    		font-size: 25px;
+    		padding-top: 5px;
+    		padding-left: 5px;
+    		font-family: Trebuchet MS;
+    		color: #2F3BC9;
+   		}
+  		.nmodel1, .nmodel2, .nmodel3, .nmodel4, .nmodel5, .nmodel6, .nmodel7 {
+  			display: none; 
+  			position: fixed; 
+  			z-index: 1; 
+  			padding-top: 100px; 
+  			left: 0;
+  			top: 0;
+  			width: 100%; 
+  			height: 100%; 
+  			background-color: rgb(0,0,0); 
+  			background-color: rgba(0,0,0,0.4); 
+  		}
+  		.nc1, .nc2, .nc3, .nc4, .nc5, .nc6, .nc7 {
+  			background-color: #fefefe;
+  			margin: auto;
+  			padding: 20px;
+  			border: 1px solid #888;
+  			width: 80%;
+  			height: 60%;
+  			overflow: auto;
+  			display: block;
+  			font-size: 20px;
+  			font-family: Times New Roman;
+  		}
+  		.nclose1, .nclose2, .nclose3, .nclose4, .nclose5, .nclose6, .nclose7 {
+    		color: #aaaaaa;
+  			float: right;
+  			font-size: 28px;
+  			font-weight: bold;
+  		}
+  		.nclose1:hover, .nclose1:focus, .nclose2:hover, .nclose2:focus, .nclose3:hover, .nclose3:focus, .nclose4:hover, .nclose4:focus, .nclose5:hover, .nclose5:focus, .nclose6:hover, .nclose6:focus, .nclose7:hover, .nclose7:focus {
+    		color: #000;
+  			text-decoration: none;
+  			cursor: pointer;
+  		}
+		/*--------------------------*/
+		table,th,tr,td {
+			border: 1px solid #848486;
+			font-family: Trebuchet MS;
+			font-size: 15px;
+		}
+/*--------------------------------------------------------------------------------------------------------------*/	
+    .related {
+      position: absolute;
+      height: 250px;
+      width: 30%;
+      left: 10px;
+      top: 25px;
+      border-right: 2px solid #a2a2a2;
+    }
+    .join {
+        position: absolute;
+        height: 250px;
+        width: 40%;
+        left: 35.5%;
+        top: 25px;
+        border-right: 2px solid #a2a2a2;
+    }
+    .countm {
+      position: absolute;
+          height: 250px;
+          width: 25%;
+          left: 75%;
+          top: 25px;     
+    }
+    .btm {
+      font-family: Trebuchet MS;
+      font-size: 20px;
+      color: #2A2929;
+    }
+    .btm1 {
+      font-family: Trebuchet MS;
+      font-size: 30px;
+      color: #2A2929;
+      text-align: center;
+    }
+    #btm2 {
+      font-family: Stencil;
+      font-size: 50px;
+      color: black;
+      text-align: center;
+      background-color: white;
+      width: 60%;
+      margin-left: 20%;
+    }
+    #btm3 {
+      width: 70px;
+      height: 40px;
+      border-radius: 3px;
+      color: white;
+      margin-right: 20%;
+      background-color:#a2a2a2;
+      font-family: Trebuchet MS;
+      font-size: 15px;
+    }
+    .arel, .re1{
+      font-style: none;
+      color: black;
+      text-decoration: none;
+    }
+    .le1 {
+      color: white;
+      text-align: center;
+      font-size: 15px;
+     padding-top: 5px;
+    }
+    .btmb {
+      width: 70px;
+      height: 40px;
+      border-radius: 3px;
+      color: white;
+      right: 10px;
+      background-color:#a2a2a2;
+      font-family: Trebuchet MS;
+      font-size: 15px;
+    }
+    .btmb:hover, #btm3:hover {
+      background-color: white;
+      color: #a2a2a2;
+      transform: scale(1.3);
+      cursor: pointer;
+    }
+	</style>
+</head>
+<body>
+	<div class="maintop">
+		<div class="miantopic">FLOOD</div>
+  		<div class="logomain">
+  			<img class="logo" src="logo.png" alt="Logo" width="95" height="85">
+  		</div>
+	</div>
+	<div class="mainsecond">
+		<marquee scrollamount="10">Floods are amoung Earth's most common and most destractive natural hazards.</marquee>
+	</div>
+
+	<div class="slidshow">
+		<div class="subslidshow">"We must build dikes of courage to hold back the flood of fear" - Martin Luther King</div>
+		<img class="mimage" src="1.jpg" style="width: 100%; height: 350px">
+		<img class="mimage" src="2.jpg" style="width: 100%; height: 350px">
+		<img class="mimage" src="3.jpg" style="width: 100%; height: 350px">
+		<img class="mimage" src="4.jpg" style="width: 100%; height: 350px">
+		<img class="mimage" src="5.jpg" style="width: 100%; height: 350px">
+		<img class="mimage" src="6.jpg" style="width: 100%; height: 350px">
+		<img class="mimage" src="7.jpg" style="width: 100%; height: 350px">
+		<img class="mimage" src="8.png" style="width: 100%; height: 350px">
+	</div>
+
+	<div class="home">
+		<div class="vl">
+      <a href="topic1.html" target="_blank">
+			<div class="t1">
+        <img src="1.jpg" class="timg" style="width: 30%; height: 80%;">
+        <abbr title="Topic 1"><div class="topic">What is flood?</div></abbr>
+      </div></a>
+	
+      <a href="topic2.html" target="_blank"><abbr title="Topic 2">
+			<div class="t2">
+        <img src="2.jpg" class="timg" style="width: 30%; height: 80%;">
+				<div class="topic">Basic Types of Floods</div></abbr>
+			</div></a>
+
+
+      <a href="topic3.html" target="_blank"><abbr title="Topic 3">
+			<div class="t3">
+        <img src="3.jpg" class="timg" style="width: 30%; height: 80%;">
+				<div class="topic">What Causes Floods?</div></abbr>
+			</div></a>
+
+      <a href="topic4.html" target="_blank"><abbr title="Topic 4">
+			<div class="t4">
+        <img src="4.jpg" class="timg" style="width: 30%; height: 80%;">
+				<div class="topic">Impact of Flooding</div></abbr>
+			</div></a>
+
+			<div class="t5"><a href="topic5.html" target="_blank"><abbr title="Topic 5">
+        <img src="5.jpg" class="timg" style="width: 30%; height: 80%;">
+				<div class="topic">Methods of flood prevention </div></abbr>
+			</div></a>
+
+			<div class="t6"><a href="topic6.html" target="_blank"><abbr title="Topic 6">
+        <img src="6.jpg" class="timg" style="width: 30%; height: 80%;">
+				<div class="topic">Benefits of Flood</div></abbr>
+			</div></a>
+
+
+      <a href="topic7.html" target="_blank"><abbr title="Topic 7">
+			<div class="t7">
+        <img src="7.jpg" class="timg" style="width: 30%; height: 80%;">
+				<div class="topic">Before During and After</div></abbr>
+			</div></a>
+
+			<div class="iname">
+				Floods Video :
+			</div>
+			<iframe width="480" height="300" src="https://www.youtube.com/embed/SYxqaVo4ElU?autoplay=1"">
+			</iframe>
+
+			<div class="mimagesname">
+				Gallery :
+			</div>
+<!--//////////------------------------Gallery------------------------------////////////////-->			
+			<div class="mimages">
+  				<div class="mimages1"> 
+   					 <abbr title="Sri Lanka"><img class="mim1" id="myImg1" alt="Sri Lanka Flooding" src="msl.jpg" style="width: 146.6px; height: 130px" ></abbr>
+  				</div>
+ 				<div class="mimages2"> 
+    				<abbr title="Chennai"><img class="mim2" id="myImg2" alt="Chennai Flooding" src="mchennai.jpg" style="width: 146.6px; height: 130px"></abbr>
+  				</div>
+  				<div class="mimages3"> 
+    				<abbr title="Paris"><img class="mim3" id="myImg3" alt="Paris Flooding" src="mparis.jpg" style="width: 146.6px; height: 130px"></abbr>
+  				</div>
+  				<div class="mimages4"> 
+    				<abbr title="Kerala"><img class="mim4" id="myImg4" alt="Kerala Flooding" src="mkerala.jpg" style="width: 146.6px; height: 130px"></abbr>
+  				</div>
+  				<div class="mimages5"> 
+    				<abbr title="San Jose"><img class="mim5" id="myImg5" alt="San Jose Flooding" src="msanjose.jpg" style="width: 146.6px; height: 130px"></abbr>
+  				</div>
+  				<div class="mimages6">
+    				<abbr title="Texas"><img class="mim6" id="myImg6" alt="Texas Flooding" src="mtexas.jpeg" style="width: 146.6px; height: 130px"></abbr>
+  				</div>
+ 			</div>
+
+ 			<div id="myModal1" class="modal1"> 
+  				<span class="close1">&times;</span>
+  				<img class="modal-content1" id="img1">
+  				<div id="caption1"></div>
+			</div>
+
+ 			<div id="myModal2" class="modal2"> 
+  				<span class="close2">&times;</span>
+  				<img class="modal-content2" id="img2">
+  				<div id="caption2"></div>
+			</div>
+
+ 			<div id="myModal3" class="modal3"> 
+  				<span class="close3">&times;</span>
+ 				<img class="modal-content3" id="img3">
+  				<div id="caption3"></div>
+			</div>
+
+ 			<div id="myModal4" class="modal4"> 
+  				<span class="close4">&times;</span>
+  				<img class="modal-content4" id="img4">
+  				<div id="caption4"></div>
+			</div>
+
+ 			<div id="myModal5" class="modal5"> 
+  				<span class="close5">&times;</span>
+  				<img class="modal-content5" id="img5">
+  				<div id="caption5"></div>
+			</div>
+
+ 			<div id="myModal6" class="modal6"> 
+  				<span class="close6">&times;</span>
+  				<img class="modal-content6" id="img6">
+  				<div id="caption6"></div>
+			</div>
+<!-----------------------------------/////////////////////////////////////////////////--------------------------------//-->
+			<div class="mnewsname">
+				News :
+			</div>
+<!-----------------------------------News Feild----------///////////////////////////////////////--------------------------------//-->
+			<div class="mnews">
+ 				<div class="mnews1" id="msnews1"> 
+     				India and Sri Lanka – Tropical Cyclone Gaja
+  				</div>
+  				<div class="mnews2" id="msnews2"> 
+    				Sri Lanka – Floods and Storms Leave 9 Dead and 5,000 Displaced
+  				</div>
+  				<div class="mnews3" id="msnews3"> 
+  					As Rains Lash Sri Lanka, Warnings Arrive on Time
+      			</div>
+  				<div class="mnews4" id="msnews4"> 
+  					Sri Lanka – 12 Dead, 27,000 Displaced as Floods Worsen
+      			</div>
+  				<div class="mnews5" id="msnews5"> 
+    				Sri Lanka – Thousands Hit by Floods in Galle and Kalutara
+  				</div>
+  				<div class="mnews6" id="msnews6">
+  					NASA Gets a Final Look at Tropical Cyclone Ockhi’s Rainfall
+     			</div>
+				<div class="mnews7" id="msnews7">
+					Sri Lanka – Floods, Rain and Strong Winds Leave 13 Dead and 5,000 Displaced
+     			</div>
+ 			</div>
+
+			<div id="nemodel1" class="nmodel1">
+  				<div class="nc1">
+    				<span class="nclose1">&times;</span>
+    				<h3 style="font-family: Trebuchet MS; font-size: 25px;">India and Sri Lanka – Tropical Cyclone Gaja</h3>
+     				<p>Tropical cyclone Gaja formed over the Bay of Bengal on 10 November moving west-south-west offshore towards southern India and northern Sri Lanka. Gaja made landfall between Nagapattinam and Vedaranniyam towns in Tamil Nadu State, India, on 15 November, with maximum sustained winds up to 139 km/h.</p>
+					<p>Some heavy rain was reported in pats of Tamil Nadu and northern Sri Lanka, where flooding affected over 5,000 people.</p>
+					<p>According to a statement released by the Chief Minister of Tamil Nadu, Cyclone Gaja, claimed 45 lives across the state and affected the districts of Thiruvarur, Thanjavur, Pudukkottai, Dindigul and Trichy.</p>
+					<p>There were reports of some minor flooding in Tamil Nadu but by far the worst of the damage from Gaja was a result of strong winds. Thousands of homes were severely damaged, over 30,000 electricity poles were broken and 127,000 trees uprooted.</p>
+					<h3 style="font-family: Trebuchet MS; font-size: 25px;">Flood Summary</h3>
+					<table style="width: 100%;">
+						<tr>
+							<th>Event</th>
+							<td>Tropical Cyclone Gaja, India and Sri Lanka</td>
+						</tr>
+						<tr>
+							<th>Date</th>
+							<td>November 6 to November 21, 2018</td>
+						</tr>
+						<tr>
+							<th>Type</th>
+							<td>Flash flood</td>
+						</tr>
+						<tr>
+							<th>Cause</th>
+							<td>Extreme rainfall</td>
+						</tr>
+						<tr>
+							<td colspan="2"><p>Tropical cyclone Gaja formed over the Bay of Bengal on 10 November moving west-south-west offshore towards southern India and northern Sri Lanka. Gaja made landfall between Nagapattinam and Vedaranniyam towns in Tamil Nadu State, India, on 15 November, with maximum sustained winds up to 139 km/h.</p>
+							<p>Sri Lanka Sri Lanka's Disaster management Centre <a href="https://reliefweb.int/sites/reliefweb.int/files/resources/Situation_Report__on_2018__1542719918.pdf" target="_blank"> reported (pdf)</a> some flooding in Jaffna as a result of heavy rain in the wake of Gaja between 16 and 18 November, 2018. Around 1,000 homes were damaged and 100 people displaced .Previously heavy rain had affected parts of Sri Lanka from 06 November, causing some floods and landslides.</p>
+							<p>India Over 200,000 people were evacuated from low-lying areas in Tamil Nadu. As of 19 November, 45 people had died as a result of the storm. Only some minor flooding was reported in Tamil Nadu however. All damage and fatalities were a result of strong winds.</p></td>
+						</tr>
+					</table>
+ 				 </div>
+			</div>
+
+			<div id="nemodel2" class="nmodel2">
+  				<div class="nc2">
+    				<span class="nclose2">&times;</span>
+    				<h3 style="font-family: Trebuchet MS; font-size: 25px;">Sri Lanka – Floods and Storms Leave 9 Dead and 5,000 Displaced</h3>
+     				<p>TAt least 9 people have died and around 5,000 displaced in Sri Lanka after a period of heavy rain and storms which have caused flooding, landslides and wind damage.</p>
+					<p>According to Sri Lanka’s Disaster Management Centre (DMC), 4 people have died in floods in the district of Kalutara, 2 in Galle and 2 in Rathnapura. One person died after strong winds downed trees in Kegalle district.</p>
+					<p>DMC said that a total of 5,834 people from 1,318 families are currently displaced and staying in 21 temporary relocation centers in the districts of Colombo (5,654 people), Kalutara (58) and Nuwara Eliya (122).</p>
+					<p>Around 1,700 homes and buildings have been severely damaged, with around 35 totally destroyed. Sri Lanka’s Department of Meteorology said that 334.1 mm of rain fell in 24 hours to 07 October, 2018 in Podiwela, Galle district.</p>
+					<p>The department said more severe weather is possible due to a deep depression located in the Bay of Bengal, adding that “very heavy falls above 150 mm can be expected at some places in Western, North-western, Central and Sabaragamuwa provinces and in Galle, Matara districts.” The country suffered major flooding in May this year when at least 12 people died and thousands were displaced. Over 140 people died in massive flooding and landslides in May 2017.</p>
+					<h3 style="font-family: Trebuchet MS; font-size: 25px;">Flood Summary</h3>
+					<table style="width: 50%;">
+						<tr>
+							<th>Event</th>
+							<td>Sri Lanka, October 2018</td>
+						</tr>
+						<tr>
+							<th>Date</th>
+							<td>October 2, 2018</td>
+						</tr>
+						<tr>
+							<th>Type</th>
+							<td>Flash flood, Landslide</td>
+						</tr>
+						<tr>
+							<th>Cause</th>
+							<td>Extreme rainfall</td>
+						</tr>
+					</table>
+					<br>
+					<img src="ni2.jpg">
+  				</div>
+			</div>
+
+			<div id="nemodel3" class="nmodel3">
+  				<div class="nc3">
+    				<span class="nclose3">&times;</span>
+    				<h3 style="font-family: Trebuchet MS; font-size: 25px;">As Rains Lash Sri Lanka, Warnings Arrive on Time</h3>
+     				<p>MARAWILA, Sri Lanka, June 6 (Thomson Reuters Foundation) – In late May, floods were the last thing on Chamindha Fernando’s mind. </p>
+					<p>A drought that started in late 2016 was in its second year and the biggest local worry was that drinking water in Marawila, a coastal town about 65 km north of Colombo, might run out. </p>
+					<p>So “when we began hearing that there was going to be heavy rains in the coming week from around May 20, at first I did not pay that much attention,” admitted Fernando, who runs a small chicken farm. </p>
+					<p>But soon the main government official in his area sent messages to business owners such as Fernando, warning them to be prepared for flooding. </p>
+					<p>Fernando said he didn’t usually trust the forecasts of Sri Lanka’s Department of Meteorology, which he felt were often cryptic and vague. But this time the alerts were much more precise, saying that after May 22 Marawila and surrounding areas were likely to be hit by floods. </p>
+					<p>The Sri Lanka Red Cross also sent the same warnings – and then on May 21 the heavens opened with three days of non-stop rain. </p>
+					<p>By May 24, Marawila and surrounding areas had received over 350mm (13 inches) of rain in four days – but Fernando had reinforced his chicken hatcheries and pens so that rainwater could not get in. </p>
+					<p> “Because I heeded the warnings, I probably avoided losses that could have gone into hundreds of thousands of rupees,” he said. </p>
+					<p>Sri Lankan weather and disaster offices have for years faced criticism for not providing adequate early warning about extreme weather – a problem that may have contributed to widespread deaths and displacement from mudslides and flooding, critics say. </p>
+					<p>But this year that is changing, with government agencies issuing a series of early warning alerts about potential threats, experts say.</p>
+					<br>
+					<img src="ni3.jpg">
+  				</div>
+			</div>
+
+			<div id="nemodel4" class="nmodel4">
+ 				<div class="nc4">
+    				<span class="nclose4">&times;</span>
+    				<h3 style="font-family: Trebuchet MS; font-size: 25px;">Sri Lanka – 12 Dead, 27,000 Displaced as Floods Worsen</h3>
+     				<p>Over 80,000 people have now been affected by floods in Sri Lanka, according to disaster management officials. More heavy rain has fallen since the flooding began on 20 May and 12 people have now lost their lives. Sri Lanka’s Disaster Management Centre (DMC) said that, as of 23 May, 84,943 people (18,542 families) have been affected, and over 2,500 homes have been damaged and 29 completely destroyed. As many as 27,621 people have been evacuated due to threats of flooding and landslides and are being housed in 194 welfare centers. </p>
+					<p>DMC said that damage assessments reveal that over 23,000 people are in need emergency flood relief and early recovery assistance. </p>
+					<p>Around 500 military and police officials have been mobilized immediately for search and rescue operations while 5,826 military and police personnel are on stand-by teams for immediate deployment. </p>
+					<p>Sri Lanka’s Department of Meteorology reported further heavy rainfall from 21 to 22 May, with 8 locations recording more than 100 mm of rain in 24 hours. Kuliyapitiyain Kurunegala District, North Western Province, recorded the highest totals for the day, with 194.8 mm. </p>
+					<p>The department says that the prevailing rainy condition in the South-western part of the island is expected to continue today, 24 May, and showers or thundershowers will occur at times in Western, Southern, Sabaragamuwa, Central and North-Western provinces. </p>
+					<p>Several rivers are on alert or minor flood alert, according to the Department of Irrigation. The only river at major flood alert is the Kalu Ganga at Millakanda, near Egaloya in Western Province. As of 24 May the level of the Kalu was 8.59 meters, above major flood stage of 8 meters, but below record levels of 12.35. </p>
+					<p>Two spill gates of the Rajanganaya dam on the Kala Oya river in Anuradhapura District, North Central Province, were opened on 23 May and people living downstream have been advised to be vigilant.</p>
+					<h3 style="font-family: Trebuchet MS; font-size: 25px;">Flood Summary</h3>
+					<table style="width: 50%;">
+						<tr>
+							<th>Event</th>
+							<td>Sri Lanka, May 2018</td>
+						</tr>
+						<tr>
+							<th>Date</th>
+							<td>May 20 to May 22, 2018</td>
+						</tr>
+						<tr>
+							<th>Type</th>
+							<td>Flash flood</td>
+						</tr>
+						<tr>
+							<th>Cause</th>
+							<td>Extreme rainfall</td>
+						</tr>
+					</table>
+ 				</div>
+			</div>
+
+			<div id="nemodel5" class="nmodel5">
+  				<div class="nc5">
+    				<span class="nclose5">&times;</span>
+    				<h3 style="font-family: Trebuchet MS; font-size: 25px;">Sri Lanka – Thousands Hit by Floods in Galle and Kalutara</h3>
+     				<p>Heavy rain and flash floods in Sri Lanka affected areas Galle and Kalutara Districts on 12 May, 2018. As much as 166 mm of rain was recorded in Galle in 24 hours to 12 May. </p>
+					<p>Sri Lanka’s Disaster Management Centre (DMC) said over 8,000 people have been affected. As many as 7,742 people were affected in Galle District, with over 6,000 of them in Kadawathsathara. Over 140 houses in Balapitiya in Galle were damaged. In Kalutara District, 635 people were affected. No fatalities or injuries were reported. </p>
+					<p>Sri Lanka’s Meteorology Department forecast further rain and thundershowers over most provinces in the island for the next few days hours. Deraniyagala in Kegalle district, Sabaragamuwa Province, recorded 148.20mm in 24 hours to 13 May. </p>
+					<p>The south-western monsoon brings rain, often heavy rain, to the country between May and September. By late May last year flooding and landslides had affected over 400,000 and left 146 dead and 112 missing.</p>
+
+  				</div>
+			</div>
+
+			<div id="nemodel6" class="nmodel6">
+  				<div class="nc6">
+    				<span class="nclose6">&times;</span>
+    				<h3 style="font-family: Trebuchet MS; font-size: 25px;">NASA Gets a Final Look at Tropical Cyclone Ockhi’s Rainfall</h3>
+     				<p>Tropical Cyclone Ockhi is quickly weakening in the Arabian Sea and is expected to dissipate on Dec. 6 when it makes landfall in northwestern India. The Global Precipitation Measurement mission or GPM core satellite passed over Ockhi and looked at its rainfall as wind shear was affecting the storm. </p>
+					<p>On Dec. 2, Ockhi became the first tropical cyclone of the year to form in the Arabian Sea. Fortunately for India the tropical cyclone remained off India’s southwestern coast. Ockhi intensified to the equivalent of a category 3 hurricane on the Saffir-Simpson hurricane wind scale before it started to weaken. Vertical wind shear caused Ockhi to weaken as the tropical cyclone started moving north-northeastward toward India’s Gulf of Khambhat. </p>
+					<p>NASA’s GPM Core Observatory satellite passed over Tropical Cyclone Ockhi on Dec. 4 at 1:16 a.m. EST (0616 UTC). GPM is a joint mission between NASA and the Japanese space agency JAXA. </p>
+					<p>The rainfall coverage was derived from data collected by GPM’s Microwave Imager (GMI) and Dual-Frequency Precipitation Radar (DPR) instruments. Those data showed that very heavy rainfall was being produced by powerful storms northwest of Ockhi’s eye. Wind shear was already pushing the strongest storms away from the center of circulation. </p>
+					<p>GPM’s GMI found rain falling at a rate of over 62 mm (2.44 inches) per hour in those storms. GPM’s radar (DPR Ku Band) sliced through the western side of the tropical cyclone. DPR found that powerful storms on that side of Ockhi were dropping precipitation at a rate of over 60 mm (2.27 inches) per hour. </p>
+					<p>At NASA’s Goddard Space Flight Center in Greenbelt, Md. a 3-D view of tropical cyclone Ockhi was created using GPM’s radar (DPR Ku Band) data. The 3-D image showed a slice through the western side of the tropical cyclone and revealed storm tops reaching heights above 16 km (9.92 miles). The 3-D cross-section by GPM’s DPR revealed that many radar reflectivity values were greater than 50 dBZ in downpours on the western side of the tropical cyclone. </p>
+					<p>The Joint Typhoon Warning Center (JTWC) issued their final bulletin on Ockhi on Dec. 5 at 4 a.m. EST (0900 UTC). At that time, Ockhi’s maximum sustained winds were near 45 knots (52 mph/83 kph) and weakening. Ockhi was centered near 8.7 degrees north latitude and 70.8 degrees east longitude. That’s about 444 nautical miles south-southeast of Karachi, Pakistan. Ockhi has tracked north-northeastward at 9 knots (10.3 mph/16.6 kph). </p>
+					<p>JWTC noted at that time “Animated multispectral satellite imagery depicts a rapidly-decaying, fully-exposed, broad low-level circulation center with limited deep convection sheared well northeast of the low-level center due to strong (40-50 knots) southerly vertical wind shear.” The storm was also becoming extra-tropical. </p>
+					<p>JTWC predicts that Ockhi will continue to weaken. Ockhi is expected to become a remnant low when it makes landfall near the Gulf of Khambhat early on Dec. 6.</p>
+					<br>
+					<img src="ni6.jpg">
+  				</div>
+			</div>
+
+			<div id="nemodel7" class="nmodel7">
+  				<div class="nc7">
+    				<span class="nclose7">&times;</span>
+    				<h3 style="font-family: Trebuchet MS; font-size: 25px;">Sri Lanka – Floods, Rain and Strong Winds Leave 13 Dead and 5,000 Displaced</h3>
+    	 			<p>At least 13 people have died, 1 is missing and 61 injured in Sri Lanka since 29 November, 2017 after severe weather including strong winds and heavy rain brought by Cyclone Ockhi. </p>
+					<p>According to the country’s Disaster Management Centre (DMC), as of 02 December, more than 106,000 people in 16 districts across the country had been affected. Kalutara is the worst hit area, where over 55,000 people have been affected. Over 26,000 have been affected in Galle. The districts of Matara, Badulla, Gampaha and Colombo are also among some of the the worst hit. </p>
+					<p>Almost 700 homes have been destroyed, with over 400 of them in Kalutara. Over 25,000 damaged, with 10,000 of those in Kalutara and over 6,000 in Galle. </p>
+					<p>The deaths occurred in Galle (8), Matara (1), Badulla (3) and Gampaha (1). One person is still missing in Matara. </p>
+					<p>DMC have set up safe locations and relief centres, currently housing 5,435 people, the majority of which are in Kalutara, Nuwaraeliya and Badulla.</p>
+  				</div>
+			</div>
+		</div>
+	</div>
+<!-----------------------------------//////////////////////////////////////////////////////////--------------------------------------//-->
+	<div class="bottom">
+   <div class="related">
+     <h4 class="btm">Related websites</h4>
+     <br>
+     <div class="re1">
+       <a href="https://www.nationalgeographic.com/" target="_blank" class="arel">National Geograpic</a>
+       <br>
+       <br>
+       <a href="https://www.nasa.gov/audience/foreducators/topnav/materials/listbysubject/Geography_landingpage.html" target="_blank" class="arel">NASA Geography</a>
+       <br>
+       <br>
+       <a href="https://www.go-lanka.com/sri-lanka/geography.html" target="_blank" class="arel">Sri Lanka Geography -Go-Lanka</a>
+       <br>
+       <br>
+      <a href="http://www.disastermin.gov.lk/" target="_blank" class="arel">Ministry of Disaster Management</a>
+     </div>
+   </div>
+   
+   <div class="join">
+     <h4 class="btm">Join with us..</h4>
+     <fieldset style="width: 70%;">
+      <form>
+        First Name   : <input type="text" id="txt1" placeholder="Enter your first name" name="">
+        <br>
+        <br>
+        Last Name  : <input type="text" id="txt2" placeholder="Enter your last name" name="">
+        <br>
+        <br>
+        E mail       : <input type="email" id="eml" placeholder="Email" name="">
+        <br>
+        <br>
+        Contact No.  : <input type="number" id="cnm" placeholder="Telephone Number" maxlength="10" name="">
+        <br>
+        <button class="btmb" onclick="tst()">Join</button>
+        <input type="reset" name="reset" id="btm3">
+       </form>
+     </fieldset>
+   </div>
+
+   <div class="countm">
+     <p class="btm1">We already have</p>
+     <input type="text" name="" value="0" id="btm2" readonly="">
+     <p class="btm1">Members</p>
+   </div> 
+  </div>
+
+  <div class="legend">
+   <div class="le1">All Rights Reserved  | Akila Ishan Leitan  | EUSL/TC/IS/2016/COM/63 </div>
+  </div>
+
+	<script type="text/javascript">
+		///////////////////---------------Image Show----------------------------
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mimage");
+ 			for (i = 0; i < x.length; i++) {
+    		x[i].style.display = "none";  
+  			}
+ 		 myIndex++;
+  		if (myIndex > x.length) {myIndex = 1}    
+  		x[myIndex-1].style.display = "block";  
+  		setTimeout(carousel, 5000); 
+		}
+		/////////////////////////-------------------------------------------------------
+
+		///-------------------------Gallery------------------------------------------------------------///
+		//----------------image 01----------------------//
+		var modal1 = document.getElementById('myModal1');
+		var img1 = document.getElementById('myImg1');
+		var modalImg1 = document.getElementById("img1");
+		var captionText1 = document.getElementById("caption1");
+		img1.onclick = function(){
+  			modal1.style.display = "block";
+  			modalImg1.src = this.src;
+  			captionText1.innerHTML = this.alt;
+		}
+		var span1 = document.getElementsByClassName("close1")[0];
+		span1.onclick = function() { 
+  			modal1.style.display = "none";
+		}
+//----------------------------------------------------//
+
+//----------------image 02----------------------//
+		var modal2 = document.getElementById('myModal2');
+		var img2 = document.getElementById('myImg2');
+		var modalImg2 = document.getElementById("img2");
+		var captionText2 = document.getElementById("caption2");
+		img2.onclick = function(){
+  			modal2.style.display = "block";
+  			modalImg2.src = this.src;
+  			captionText2.innerHTML = this.alt;
+		}
+		var span2 = document.getElementsByClassName("close2")[0];
+		span2.onclick = function() { 
+  			modal2.style.display = "none";
+		}
+//----------------------------------------------------//
+
+//----------------image 03----------------------//
+		var modal3 = document.getElementById('myModal3');
+		var img3 = document.getElementById('myImg3');
+		var modalImg3 = document.getElementById("img3");
+		var captionText3 = document.getElementById("caption3");
+		img3.onclick = function(){
+  			modal3.style.display = "block";
+  			modalImg3.src = this.src;
+  			captionText3.innerHTML = this.alt;
+		}
+		var span3 = document.getElementsByClassName("close3")[0];
+		span3.onclick = function() { 
+  			modal3.style.display = "none";
+		}
+//----------------------------------------------------//
+
+//----------------image 04----------------------//
+		var modal4 = document.getElementById('myModal4');
+		var img4 = document.getElementById('myImg4');
+		var modalImg4 = document.getElementById("img4");
+		var captionText4 = document.getElementById("caption4");
+		img4.onclick = function(){
+  			modal4.style.display = "block";
+  			modalImg4.src = this.src;
+  			captionText4.innerHTML = this.alt;
+		}
+		var span4 = document.getElementsByClassName("close4")[0];
+		span4.onclick = function() { 
+  			modal4.style.display = "none";
+		}
+//----------------------------------------------------//
+
+//----------------image 05----------------------//
+		var modal5 = document.getElementById('myModal5');
+		var img5 = document.getElementById('myImg5');
+		var modalImg5 = document.getElementById("img5");
+		var captionText5 = document.getElementById("caption5");
+		img5.onclick = function(){
+ 	 		modal5.style.display = "block";
+  			modalImg5.src = this.src;
+  			captionText5.innerHTML = this.alt;
+		}
+		var span5 = document.getElementsByClassName("close5")[0];
+		span5.onclick = function() { 
+  			modal5.style.display = "none";
+		}
+//----------------------------------------------------//
+
+//----------------image 06----------------------//
+		var modal6 = document.getElementById('myModal6');
+		var img6 = document.getElementById('myImg6');
+		var modalImg6 = document.getElementById("img6");
+		var captionText6 = document.getElementById("caption6");
+		img6.onclick = function(){
+ 			modal6.style.display = "block";
+  			modalImg6.src = this.src;
+  			captionText6.innerHTML = this.alt;
+		}
+		var span6 = document.getElementsByClassName("close6")[0];
+		span6.onclick = function() { 
+  			modal6.style.display = "none";
+		}
+//----------------------------------------------------//
+//------------------------------------------------------------------------------------------------------//
+
+///-------------------------News Feild------------------------------------------------------------///
+		var nmodel1 = document.getElementById('nemodel1');
+		var nbtn1 = document.getElementById("msnews1");
+		var nspan1 = document.getElementsByClassName("nclose1")[0];
+		nbtn1.onclick = function() {
+  			nmodel1.style.display = "block";
+		}
+		nspan1.onclick = function() {
+ 			nmodel1.style.display = "none";
+		}
+
+
+		var nmodel2 = document.getElementById('nemodel2');
+		var nbtn2 = document.getElementById("msnews2");
+		var nspan2 = document.getElementsByClassName("nclose2")[0];
+		nbtn2.onclick = function() {
+  			nmodel2.style.display = "block";
+		}
+		nspan2.onclick = function() {
+ 			nmodel2.style.display = "none";
+		}
+
+
+		var nmodel3 = document.getElementById('nemodel3');
+		var nbtn3 = document.getElementById("msnews3");
+		var nspan3 = document.getElementsByClassName("nclose3")[0];
+		nbtn3.onclick = function() {
+  			nmodel3.style.display = "block";
+		}
+		nspan3.onclick = function() {
+ 			nmodel3.style.display = "none";
+		}
+
+
+		var nmodel4 = document.getElementById('nemodel4');
+		var nbtn4 = document.getElementById("msnews4");
+		var nspan4 = document.getElementsByClassName("nclose4")[0];
+		nbtn4.onclick = function() {
+  			nmodel4.style.display = "block";
+		}
+		nspan4.onclick = function() {
+ 			nmodel4.style.display = "none";
+		}
+
+
+		var nmodel5 = document.getElementById('nemodel5');
+		var nbtn5 = document.getElementById("msnews5");
+		var nspan5 = document.getElementsByClassName("nclose5")[0];
+		nbtn5.onclick = function() {
+  			nmodel5.style.display = "block";
+		}
+		nspan5.onclick = function() {
+ 			nmodel5.style.display = "none";
+		}
+
+
+		var nmodel6 = document.getElementById('nemodel6');
+		var nbtn6 = document.getElementById("msnews6");
+		var nspan6 = document.getElementsByClassName("nclose6")[0];
+		nbtn6.onclick = function() {
+  			nmodel6.style.display = "block";
+		}
+		nspan6.onclick = function() {
+ 			nmodel6.style.display = "none";
+		}
+
+
+		var nmodel7 = document.getElementById('nemodel7');
+		var nbtn7 = document.getElementById("msnews7");
+		var nspan7 = document.getElementsByClassName("nclose7")[0];
+		nbtn7.onclick = function() {
+  			nmodel7.style.display = "block";
+		}
+		nspan7.onclick = function() {
+ 			nmodel7.style.display = "none";
+		}
+
+//------------------------------------Join--------------------------------------------
+    function msg()
+    {
+      alert("Hello " +txt1.value+ " " +txt2.value+"\n"+"Thank You for joing with us"+"\n"+"We will be in contact through "+cnm.value+"\n");
+    }
+
+    function tst()
+    {
+      if (!txt1.value) {
+        alert("Fill the First Name");
+      }
+      else if (!txt2.value) {
+        alert("Fill the Last Name");
+      }
+      else if (!cnm.value) {
+        alert("Fill the Contact Number");
+      }
+      else if (!eml.value) {
+        alert("Fill the Email");
+      }
+      else if (cnm.value.length<10) {
+        alert("Check your Contact Number Again");
+      }
+      else{   //------------have a one day to do this part.....
+        var x = btm2.value;     //--------here getting value is string
+        var result= parseInt(x)+1;    //------------here it convert to int value that's why we can add 1; else not add show two values....
+        document.getElementById('btm2').value=result;
+        msg(); 
+      } 
+    }
+/////------------------------------------------------ Finished :-) -----------------------------------------------------------/////
+	</script>
+</body>
+</html>
